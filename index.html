@@ -2,25 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>AfghaniTrader – Secure Your Crypto Future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AfghaniTrader – Invest & Earn</title>
   <link rel="stylesheet" href="style.css" />
   <script src="js/lang.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <img src="assets/logo.png" alt="Logo" height="100" />
-    <nav>
-    </nav>
-    <button onclick="switchLanguage()">🌐 English / پښتو</button>
+  <header class="hero">
+    <img src="assets/logo.png" alt="AfghaniTrader Logo" height="60" />
+    <h1 id="hero-title">Welcome to AfghaniTrader</h1>
+    <p id="hero-subtitle">Invest in USDT. Earn 3% Daily with VIP plans.</p>
+    <div class="cta-buttons">
+      <a href="register.html" class="btn" id="registerBtn">Register</a>
+      <a href="login.html" class="btn-outline" id="loginBtn">Login</a>
+    </div>
+    <button onclick="switchLanguage()" class="lang-btn">🌐 English / پښتو</button>
   </header>
 
   <main>
-    <h1 id="welcome">Welcome to AfghaniTrader</h1>
-    <p>Your path to financial freedom starts here. Earn 3% daily with USDT.</p>
-    <a href="register.html" class="btn">Register</a>
-    <a href="login.html" class="btn btn-outline">Login</a>
+    <section class="why-choose">
+      <h2 id="why-vip">Why AfghaniTrader?</h2>
+      <ul>
+        <li>✅ Daily 3% profit in USDT</li>
+        <li>✅ TRC20 wallet-based transactions</li>
+        <li>✅ Transparent VIP system</li>
+        <li>✅ Invite your team, earn more</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature-boxes">
+        <div class="box">
+          <h3>🔐 Secure Wallet</h3>
+          <p>Use your own USDT TRC20 wallet – no third-party risks.</p>
+        </div>
+        <div class="box">
+          <h3>📈 VIP Plans</h3>
+          <p>Choose a VIP plan, get paid daily for 30 days straight.</p>
+        </div>
+        <div class="box">
+          <h3>💸 Easy Withdrawals</h3>
+          <p>Withdraw your profits anytime (min $10).</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
