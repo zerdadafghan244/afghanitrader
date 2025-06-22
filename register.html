@@ -12,46 +12,39 @@
 <body>
 
   <header>
-    <h1 id="register">Register</h1>
-    <button onclick="switchLanguage()">🌐 English / پښتو</button>
+    <h1 id="register">Create Your Account</h1>
+    <button onclick="switchLanguage()" class="lang-btn">🌐 English / پښتو</button>
   </header>
 
   <main>
     <form id="registerForm">
       <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{7,14}" />
 
-      <input type="tel" id="phone" placeholder="Phone Number (Only digits)" required pattern="[0-9]{7,14}" />
-
-      <!-- ✅ Country Codes Dropdown -->
-      <select id="country" required>
+      <!-- Country code dropdown -->
+      <select id="countryCode" required>
         <option value="">Select Country Code</option>
         <option value="+93">🇦🇫 Afghanistan (+93)</option>
-        <option value="+1">🇺🇸 United States (+1)</option>
-        <option value="+44">🇬🇧 UK (+44)</option>
+        <option value="+1">🇺🇸 USA (+1)</option>
         <option value="+91">🇮🇳 India (+91)</option>
-        <option value="+92">🇵🇰 Pakistan (+92)</option>
+        <option value="+44">🇬🇧 UK (+44)</option>
         <option value="+971">🇦🇪 UAE (+971)</option>
-        <option value="+966">🇸🇦 Saudi Arabia (+966)</option>
-        <option value="+98">🇮🇷 Iran (+98)</option>
-        <!-- ✅ ته کولی شې نور 200+ هیوادونه هم اضافه کړې -->
+        <!-- نور هیوادونه دلته اضافه کولای شې -->
       </select>
 
-      <input type="email" id="email" placeholder="Email Address" required />
-
-      <!-- ✅ Password with show/hide -->
+      <!-- Password with show/hide -->
       <div class="password-group">
         <input type="password" id="password" placeholder="Password" required />
         <button type="button" class="toggle-password" data-target="password">👁️</button>
       </div>
 
       <div class="password-group">
-        <input type="password" id="confirm-password" placeholder="Confirm Password" required />
-        <button type="button" class="toggle-password" data-target="confirm-password">👁️</button>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <button type="button" class="toggle-password" data-target="confirmPassword">👁️</button>
       </div>
 
-      <input type="text" id="invite" placeholder="Referral Code (optional)" />
-
-      <button type="submit" class="btn">Create Account</button>
+      <button type="submit" class="btn">Register</button>
     </form>
 
     <p>Already have an account? <a href="login.html" id="login">Login</a></p>
@@ -62,4 +55,4 @@
   </footer>
 
 </body>
-</html>
+</html> 
