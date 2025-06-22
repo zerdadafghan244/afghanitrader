@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Withdraw – AfghaniTrader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/lang.js" defer></script>
+  <script src="js/withdraw.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1 id="withdraw">Withdraw USDT</h1>
+    <button onclick="switchLanguage()">🌐 English / پښتو</button>
+  </header>
+
+  <main>
+    <form id="withdrawForm">
+      <input type="text" id="wallet" placeholder="Your USDT (TRC20) Wallet Address" required />
+      <input type="number" id="amount" min="10" placeholder="Enter amount (Min $10)" required />
+      <button type="submit" class="btn">Request Withdraw</button>
+    </form>
+
+    <div id="result" class="info"></div>
+
+    <p>💡 Withdraw requests under $10 will be rejected.</p>
+    <p>💸 Please double-check your wallet address before submitting.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AfghaniTrader</p>
+  </footer>
+
+</body>
+</html> 

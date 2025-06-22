@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard – AfghaniTrader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/lang.js" defer></script>
+  <script type="module" src="js/dashboard.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1 id="dashboard">Dashboard</h1>
+    <button onclick="switchLanguage()">🌐 English / پښتو</button>
+  </header>
+
+  <main>
+    <section class="user-info">
+      <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+      <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+      <p><strong>VIP Level:</strong> <span id="vipLevel">Loading...</span></p>
+      <p><strong>Balance:</strong> <span id="balance">0 USDT</span></p>
+    </section>
+
+    <section class="referral">
+      <p><strong>Your Referral Link:</strong></p>
+      <input type="text" id="referralLink" readonly />
+      <button id="copyReferral">Copy</button>
+    </section>
+
+    <section class="navigation">
+      <a href="deposit.html" class="btn" id="deposit">Deposit</a>
+      <a href="withdraw.html" class="btn" id="withdraw">Withdraw</a>
+      <a href="vip.html" class="btn" id="vip">Upgrade VIP</a>
+      <a href="tasks.html" class="btn" id="tasks">Daily Task</a>
+      <a href="team.html" class="btn" id="team">My Team</a>
+      <a href="settings.html" class="btn" id="settings">Settings</a>
+    </section>
+
+    <button id="logoutBtn" class="btn-outline" id="logout">Logout</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AfghaniTrader</p>
+  </footer>
+
+</body>
+</html> 
